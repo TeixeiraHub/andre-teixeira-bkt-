@@ -1,0 +1,92 @@
+import java.util.Scanner;
+
+public class MatrixGauss {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("\nEntre com o número POSITIVO de linhas");
+		int lin = scanner.nextInt();
+
+		System.out.println("\nEntre com o número POSITIVO de colunas");
+		int col = scanner.nextInt();
+
+		System.out.println("Digite os valores da matrix");
+		double matrix[][] = leMatrix(lin, col);
+		System.out.print("Matrix digitada.");
+		imprimeMatrix(matrix);
+		System.out.print("\nMatrix escalonada.");
+		imprimeMatrix(escalona(matrix));
+
+		double x = (matrix[0][1]*matrix[2][3])+(matrix[0][2]*matrix[2][3])-matrix[0][3];
+		double y = matrix[1][2]*matrix[2][3]-matrix[1][3];
+		double z = matrix[2][3];
+
+		System.out.println();
+		System.out.print("X = ");
+		System.out.println(x);
+		System.out.print("Y = ");
+		System.out.println(y);
+		System.out.print("Z = ");
+		System.out.println(z);
+
+	}
+
+	@SuppressWarnings("resource")
+	public static double[][] leMatrix(int lin, int col){
+
+		double mat[][] = new double[lin][col];
+		Scanner s = new Scanner (System.in);
+
+		for (int i = 0; i < lin; i++) {
+
+			for (int j = 0; j < col; j++) {
+
+				mat[i][j] = s.nextDouble();				
+			}	
+		}
+		return mat;
+	}
+
+	public static double[][] escalona(double mat[][]){
+
+		int ordem  = mat.length;
+
+		for (int i = 0; i < ordem; i++) {
+			double pivo = mat[i][i];
+
+			for (int j = i; j < ordem; j++) {
+				mat[i][j] /= pivo;
+
+				for (int l = i+1; l < ordem; l++) {
+					double x = mat[l][i]*(-1);
+
+					for (int c = i; c < ordem; c++) {
+						mat[l][c] += mat[i][c] * x;
+					}
+				}
+
+			}	
+		}
+		return mat;
+	}
+
+	public static void imprimeMatrix (double mat[][]) {
+
+		int lin = mat.length;
+		int col = mat[0].length;
+
+		for (int i = 0; i < lin; i++) {
+
+			System.out.println("\n");
+
+			for (int j = 0; j < col; j++) {
+
+				System.out.print(mat[i][j] + "\t");
+
+			}
+		}
+	}
+}

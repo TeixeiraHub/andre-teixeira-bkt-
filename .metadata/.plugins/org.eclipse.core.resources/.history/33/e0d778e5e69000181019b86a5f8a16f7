@@ -1,0 +1,23 @@
+package candidatura.questao6;
+
+public class Questao6 implements eStender {
+	
+	final static int valorParaTodos = 150;
+	static int constante = 500;
+	
+	public void meEstenda() {
+		System.out.println("Fui eStendido.");
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Questao6 c = new Questao6();
+		
+		System.out.println(constante);
+		System.out.println(valorParaTodos);
+		
+		c.meEstenda();
+	}
+
+}

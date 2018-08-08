@@ -1,0 +1,11 @@
+package candidatura.questao1;
+import 
+public class Executa {
+
+	public static void main(String[] args) {
+		int x = gerarPar(1);
+		
+		System.out.println(x);
+	}
+
+}

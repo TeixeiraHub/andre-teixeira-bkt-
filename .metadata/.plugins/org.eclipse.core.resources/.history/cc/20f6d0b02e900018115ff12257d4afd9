@@ -1,0 +1,21 @@
+package candidatura.questao5;
+
+public class Questao5{
+
+	public static void main(String[] args) {
+		
+		Mamifero mamifero = new Mamifero();
+		System.out.println("Mamíferos");
+		mamifero.comer();
+		mamifero.dormir();
+		mamifero.mamar();
+		System.out.println();
+		
+		Aves ave = new Aves();
+		System.out.println("Aves");
+		ave.comer();
+		ave.dormir();
+		ave.voar();
+	}
+
+}

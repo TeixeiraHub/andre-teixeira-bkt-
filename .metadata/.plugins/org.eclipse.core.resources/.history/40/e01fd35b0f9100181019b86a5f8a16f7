@@ -1,0 +1,19 @@
+package candidatura.questao8;
+
+public class Questao8 {
+
+	public static void main(String[] args) {
+
+		int var1 = 3;
+		int var2 = 0;
+		int res;
+		
+		int vetor[] = new int[2]; 
+		
+		vetor[2]=0;
+		
+		res = var1/var2;
+
+	}
+
+}

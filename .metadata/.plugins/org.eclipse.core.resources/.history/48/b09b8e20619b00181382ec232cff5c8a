@@ -1,0 +1,33 @@
+
+public class NewtonRaphson {
+	
+	public static double horner (double[] a, double x) {  
+	     double result = 0.0;  
+	     int n = a.length - 1;  
+	     for (int i = n; i >= 0; i--) {  
+	         System.out.println(result);
+	         System.out.println(x);
+	         System.out.println(i);
+	         System.out.println(a[i]);
+	         //System.out.println(x * result + a [i]);
+	         result = x * result + a [i]; 
+	         System.out.println(result);
+	     }  
+	     return result;  
+	}
+	
+	public static void main(String[] args) {
+
+		double[] a = { 1, 30, 7, 12, 23, 50 };   
+        //System.out.println (horner (a, 9));  
+        System.out.println (horner (a, 4));  
+        /*System.out.println (horner (a, -1));  
+        System.out.println (horner (a, -3));  
+        System.out.println (horner (a, -5));  
+        System.out.println (horner (a, -0));  
+        System.out.println (horner (a, -10));*/
+		
+
+	}
+
+}

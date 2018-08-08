@@ -1,0 +1,11 @@
+package candidatura.questao6;
+
+public class Conta {
+	
+	int valorParaTodos = 0;
+
+	public void setValorParaTodos(int valorParaTodos) {
+		this.valorParaTodos = valorParaTodos;
+	}
+
+}

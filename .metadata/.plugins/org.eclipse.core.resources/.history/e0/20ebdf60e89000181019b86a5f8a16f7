@@ -1,0 +1,10 @@
+package candidatura.questao6;
+
+public abstract class eStender {
+	
+	int valorParaTodos = 150;
+	int constante = 500;
+		
+	public abstract void meEstenda();	
+	
+}

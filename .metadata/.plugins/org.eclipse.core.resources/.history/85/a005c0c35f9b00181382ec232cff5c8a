@@ -1,0 +1,34 @@
+package com.bilhete.tipo.assento;
+
+public class TipoAssento {
+	
+	tipoAssento assento = new tipoAssento();
+	
+	private int executiva = 1;
+	private int normal = 2;
+	private int primeira = 3;
+	
+	public int getExecutiva() {
+		return assento + executiva;
+	}
+	
+	public void setExecutiva(int executiva) {
+		this.executiva = assento + executiva;
+	}
+	
+	public int getNormal() {
+		return normal;
+	}
+	
+	public void setNormal(int normal) {
+		this.normal = normal;
+	}
+	
+	public int getPrimeira() {
+		return primeira;
+	}
+	
+	public void setPrimeira(int primeira) {
+		this.primeira = primeira;
+	}
+}

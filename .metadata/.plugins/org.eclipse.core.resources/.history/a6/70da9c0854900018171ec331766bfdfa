@@ -1,0 +1,23 @@
+package candidatura.questao7;
+
+public class classeA implements Contrato {
+
+		private Registry r;
+		public Servidor() throws RemoteException
+		{
+			r = LocateRegistry.createRegistry(3232);
+			r.rebind ("Calculadora", this);
+		}
+
+public void implementeMe()
+{
+	System.out.println("ImplementeMe");
+}
+
+
+	public static void main (String[]args) throws RemoteException
+	{
+		Servidor s=new Servidor();
+	}
+
+}

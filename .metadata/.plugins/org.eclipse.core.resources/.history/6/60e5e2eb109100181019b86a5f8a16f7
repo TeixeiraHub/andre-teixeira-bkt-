@@ -1,0 +1,27 @@
+package candidatura.questao8;
+
+public class Questao8 extends Exception{
+
+	public static void main(String[] args) {
+
+		int var1 = 3;
+		int var2 = 0;
+		
+		int res;
+		
+		int vetor[] = new int[2];
+		
+		try {
+		
+		vetor[2]=0;
+		
+		res = var1/var2;
+		
+		}catch(Exception excecaoChecada) {
+			
+			
+		}
+
+	}
+
+}

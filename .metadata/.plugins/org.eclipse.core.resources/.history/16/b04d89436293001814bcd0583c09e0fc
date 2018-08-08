@@ -1,0 +1,32 @@
+package candidatura.questao9;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main extends Pessoa {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int idade = 0;
+		int id = 0;
+		String nome = null;
+		
+		int aux = 1;
+		
+		Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Joao");
+		pessoa.setId(1);
+		pessoa.setIdade(19);
+		
+        ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+        System.out.println("Para imprimir as pessoas cadastradas precione `0`");
+        while(aux != 0) {
+        	pessoas.add(pessoa);
+        	aux = scanner.nextInt();
+        }
+        
+        System.out.println(pessoa.getNome()+"\n"+pessoa.getId()+"\n"+pessoa.getIdade());
+
+	}
+
+}

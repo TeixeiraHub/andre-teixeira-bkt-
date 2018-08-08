@@ -1,0 +1,27 @@
+package candidatura.questao3;
+
+import java.util.Random;
+
+public class Questao3 {
+
+	public static void main(String[] args) {
+		Random gerador = new Random();
+
+		int S = gerador.nextInt(1000);
+		
+		int R = gerador.nextInt(10);
+
+		System.out.println(S);
+		System.out.println();
+		System.out.println(R);
+		System.out.println();
+		for (int i = 1; i <= S; i++) {
+			if (i%R==0) {
+				System.out.println(i);
+				int aux = 0;
+				aux += i;
+				
+			}
+		}
+	}
+}

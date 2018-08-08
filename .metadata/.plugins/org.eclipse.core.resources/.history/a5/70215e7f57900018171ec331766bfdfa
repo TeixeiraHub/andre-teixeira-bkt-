@@ -1,0 +1,14 @@
+package candidatura.questao7;
+
+public class classeB implements Contrato{
+
+	public static void main (String[]args){
+		
+		System.out.println(implementeMe());
+	}
+
+	private static char[] implementeMe() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

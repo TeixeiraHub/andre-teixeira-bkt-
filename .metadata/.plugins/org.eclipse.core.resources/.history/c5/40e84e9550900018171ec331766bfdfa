@@ -1,0 +1,9 @@
+package candidatura.questao6;
+
+public abstract class Conta {
+		
+	public abstract meExtenda();
+	
+	
+	
+}

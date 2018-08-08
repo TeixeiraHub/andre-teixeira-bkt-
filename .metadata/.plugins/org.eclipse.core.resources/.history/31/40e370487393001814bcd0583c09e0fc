@@ -1,0 +1,57 @@
+package ImpostoRenda.RMI;
+
+
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+public class Servidor extends UnicastRemoteObject implements Servico {
+
+		private Registry r;
+		public Servidor() throws RemoteException
+		{
+			r = LocateRegistry.createRegistry(3232);
+			r.rebind ("Calculadora", this);
+		}
+
+public double irCalcBase1(double a) throws RemoteException
+{
+	double c = 140.12;
+	double b = 0.075;
+	double d = 0.0;
+	return d=a*b-c;
+}
+
+public double irCalcBase2(double a) throws RemoteException
+{
+	double c = 350.11;
+	double b = 0.15;
+	double d = 0.0;
+	return d=a*b-c;
+}
+
+public double irCalcBase3(double a) throws RemoteException
+{
+	double c = 630.10;
+	double b = 0.225;
+	double d = 0.0;
+	return d=a*b-c;
+}
+
+public double irCalcBase4(double a) throws RemoteException
+{
+	double c = 863.33;
+	double b = 0.275;
+	double d = 0.0;
+	return d=a*b-c;
+}
+
+
+	public static void main (String[]args) throws RemoteException
+	{
+		Servidor s=new Servidor();
+	}
+
+}

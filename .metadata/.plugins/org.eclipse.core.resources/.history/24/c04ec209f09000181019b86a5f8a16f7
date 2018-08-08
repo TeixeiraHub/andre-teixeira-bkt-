@@ -1,0 +1,36 @@
+package candidatura.questao7;
+import java.io.IOException;
+import java.util.Scanner;
+//7.4
+public class Main{ 
+	public static void executar (char a) {
+				
+		if(a == 'a' || a == 'A') {
+			classeA chamaA = new classeA();
+			chamaA.implementeMe();
+			
+		}
+		if (a == 'b' || a == 'B') {
+			
+			classeB chamaB = new classeB();
+			chamaB.implementeMe();
+		}
+		if (a == 'c' || a == 'C') {
+			
+			classeC chamaC = new classeC();
+			chamaC.implementeMe();
+		}
+		else {
+			System.out.println("Caracter inválido");
+		}
+	}
+
+	public static void main(String[] args) throws IOException {
+		
+		
+		System.out.println("Digite uma letra do alfabeto.");
+		char letra = (char)System.in.read();
+		executar(letra);
+		
+	}
+}

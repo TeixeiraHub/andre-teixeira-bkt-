@@ -1,0 +1,14 @@
+package candidatura.questao4;
+
+import java.util.Calendar;
+
+public class Questao4 {
+
+	public static void main(String[] args) {
+		
+		Calendar c = Calendar.getInstance();
+		int monthMaxDays = c.getActualMaximum(Calendar.DAY_OF_MONTH);
+
+	}
+
+}

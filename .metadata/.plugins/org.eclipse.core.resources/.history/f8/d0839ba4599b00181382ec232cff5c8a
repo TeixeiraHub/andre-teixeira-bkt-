@@ -1,0 +1,45 @@
+//package fonte;
+
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.util.Scanner;
+
+public class Cliente {
+	
+	private Registry r;
+	private Servico s;
+	
+	public Cliente() throws RemoteException, NotBoundException
+	{
+		r=LocateRegistry.getRegistry("10.2.11.124", 3232);
+		s=(Servico)r.lookup("Calculadora");
+	}
+	
+	public void ServCalc() throws RemoteException
+	{
+		Scanner sr=new Scanner(System.in);
+		System.out.println("Digite o seu salario:");
+		double a=sr.nextInt();
+		
+		if(a<=0)
+		{
+			System.out.println("Não podem ser inseridos valores iguais a 0 ou negativos!" + "\nTente novamente!");
+		}
+		
+		else if (a>0 && a <= 1868.22)
+		{
+			System.out.println("Você é isento do IPRF!");
+		}
+		else
+			System.out.println("Seu desconto no IRPF é = "+s.irCalcBase(a));
+	}
+	
+	
+	public static void main(String[]args) throws RemoteException, NotBoundException
+	{
+		Cliente c=new Cliente();
+		c.ServCalc();
+	}
+}

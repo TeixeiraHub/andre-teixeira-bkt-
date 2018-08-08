@@ -1,0 +1,7 @@
+package candidatura.questao6;
+
+public abstract class eStender {
+		
+	public abstract void meEstenda();	
+	
+}

@@ -1,0 +1,21 @@
+package candidatura.questao8;
+
+import java.util.Calendar;
+
+@SuppressWarnings("serial")
+public class Excecao extends Exception{
+	
+	 public void lancaChecada() {
+		 
+		 Calendar cal = Calendar.getInstance();
+		 int diaMes = cal.get(Calendar.DAY_OF_MONTH);
+		 
+		 System.out.println(diaMes);
+	 }
+	 
+	 public void propagaChecada(int dia) throws ChecadaException {
+		 if (dia%2!=0) {
+			 throw new ChecadaException();
+		 } 
+	 }
+}

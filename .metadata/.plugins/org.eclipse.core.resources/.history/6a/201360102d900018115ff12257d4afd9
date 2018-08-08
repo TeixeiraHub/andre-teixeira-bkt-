@@ -1,0 +1,46 @@
+package candidatura.questao5;
+
+public class Questao5 {
+	
+	abstract class Animal{
+		protected abstract void comer();
+		//protected abstract void dormir();
+	}
+	
+	public class Mamifero extends Animal{
+		@Override
+		protected void comer() {
+			System.out.println("Comer");
+		}
+		//@Override
+		private void dormir() {
+			System.out.println("Dormir");
+		}
+		private void mamar() {
+			System.out.println("Mamar");
+		}
+	}
+	
+	public class Aves extends Animal{
+		//@Override
+		private void dormir() {
+			System.out.println("Dormir");
+		}
+		@Override
+		protected void comer() {
+			System.out.println("Comer");
+		}
+		private void voar() {
+			System.out.println("Voar");
+		}
+	}
+	
+
+	public static void main(String[] args) {
+		
+		Mamifero mamifero = new Mamifero();
+		
+		Aves ave = new Aves();
+	}
+
+}

@@ -1,0 +1,10 @@
+package candidatura.questao6;
+
+public class Conta {
+	
+	final int valorParaTodos = 150;
+	final static int constante = 500;
+	
+}
+
+public abstract void meExtenda();

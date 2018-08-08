@@ -1,0 +1,39 @@
+package wflowCtrl;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class sensor {
+	
+	public Socket sensorSocket = null;
+    PrintWriter out = null;
+    BufferedReader in = null;
+    int data = 0;
+    
+	sensor(int num, int port) {
+		
+		try{
+            sensorSocket = new Socket("localhost", port);
+            if (sensorSocket.isConnected())
+                //System.out.println("Marcador esta conectado.");
+            out = new PrintWriter(sensorSocket.getOutputStream(), true);
+        } catch (UnknownHostException e)
+        {
+            System.err.println("Don't know about host: localhost.");
+            System.exit(1);
+        } catch (IOException e)
+        {
+            System.err.println("Não foi possivel pega a entrada para o localhost.");
+            System.exit(1);
+        }
+	}
+	
+	
+    
+    
+
+
+}

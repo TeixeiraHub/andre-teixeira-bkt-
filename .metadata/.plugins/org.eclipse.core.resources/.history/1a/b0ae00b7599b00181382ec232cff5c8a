@@ -1,0 +1,57 @@
+//package fonte;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+public class Servidor extends UnicastRemoteObject implements Servico {
+
+ private Registry r;
+ public Servidor() throws RemoteException
+ {
+   r = LocateRegistry.createRegistry(3232);
+   r.rebind ("Calculadora", this);
+ }
+
+@Override
+public double irCalcBase(double a) throws RemoteException
+{
+double d = 0.0;
+	 
+	if (a>1868.22 && a<=2799.86)
+	{
+		double c = 140.12;
+		double b = 0.075;
+		d=a*b-c;
+	}
+	
+	if (a>2799.86 && a<=3733.19)
+	{
+		double c = 350.11;
+		double b = 0.15;
+		d=a*b-c;
+	}
+	
+	if (a>3733.19 && a<=4664.68)
+	{
+		double c = 630.10;
+		double b = 0.225;
+		d=a*b-c;
+	}
+	
+	if(a>=4664.68)
+	{
+		double c = 863.33;
+		double b = 0.275;
+		d=a*b-c;
+	}
+  return d;
+}
+
+
+ public static void main (String[]args) throws RemoteException
+ {
+		Servidor s=new Servidor();			
+ }
+}

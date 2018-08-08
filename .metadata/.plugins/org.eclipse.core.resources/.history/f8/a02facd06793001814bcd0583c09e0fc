@@ -1,0 +1,19 @@
+package candidatura.questao9;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+
+		ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+
+		pessoas.add(pessoa);
+
+
+		for (Pessoa pessoa2 : pessoas) {
+			System.out.println(pessoa.getNome()+"\n"+pessoa.getId()+"\n"+pessoa.getIdade());
+		}	       
+	}
+}

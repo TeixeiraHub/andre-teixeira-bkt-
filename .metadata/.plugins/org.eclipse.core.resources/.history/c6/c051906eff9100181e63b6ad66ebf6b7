@@ -1,0 +1,13 @@
+package wflowCtrl;
+
+import java.io.BufferedReader;
+import java.net.Socket;
+
+public class atuador {
+	
+	public Socket actuatorSocket = null;
+    BufferedReader in = null;
+    int num = 1;
+    int data = 0;
+
+}

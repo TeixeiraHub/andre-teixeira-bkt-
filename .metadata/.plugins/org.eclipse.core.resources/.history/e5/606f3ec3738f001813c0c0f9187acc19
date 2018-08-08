@@ -1,0 +1,35 @@
+package candidatura.questao4;
+
+import java.util.Scanner;
+
+public class Questao4 {
+
+	
+	private static int diasMes(int mes) {
+	
+	int dias = 31;
+	
+	if(mes>12 || mes<1){
+		System.out.println("Mes invalido");
+	}else {
+		switch(mes)
+		{
+		// fevereiro: subtraímos 2 dias aqui e 1 dia no próximo case
+		case 2:
+			dias-=2;
+
+			//meses que possuem 30 dias: só subtraímos 1 dia
+		case 4: case 6: case 9: case 11:
+			dias-=1;
+		}
+
+	}
+	return dias;
+}
+
+	public static void main(String[] args) {
+		
+		System.out.println(diasMes(6));
+	}
+
+}

@@ -1,0 +1,14 @@
+package candidatura.questao7;
+//7.3
+public class classeC implements Contrato{
+	
+	public void implementeMe() {
+		System.out.println("Classe C");
+	}
+	
+	public static void main(String[] args) {
+		classeC c = new classeC();
+		
+		c.implementeMe();
+	}
+}

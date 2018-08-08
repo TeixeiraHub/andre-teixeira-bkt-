@@ -1,0 +1,56 @@
+package candidatura.questao4;
+
+
+public class Questao4 {
+
+	/**
+	 * @author Jared Holley
+	 * Date: 4/01/14
+	 * Period: 3rd
+	 * 
+	 * Write a program that asks the user to enter a month (1 = January, 2 = February, and
+	 * so on) and then prints the number of days of the month. For February, print
+	 * “28 days”.
+	 * 
+	 * With a method int getDays(). Do not use a separate if or else
+	 * statement for each month. Use Boolean operators.
+	 */
+
+	 //31: 1,3,5,7,8,10,12
+	 //30: 2,4,6,9,11
+	 public class Month {
+	  private int month;
+
+	  /**
+	   * The constructor for the Month class.
+	   * Simply takes in a monthNumber and sets it to the 
+	   * class variable.
+	   * @param monthNumber
+	   */
+	  public Month(int monthNumber){
+	    month = monthNumber;
+	  }
+
+	  /**
+	   * The method that converts a month number into the number of days within that month.
+	   * It first checks if the month is February so that it eliminates that from the        following conditions that would produce a false positive.
+	   * It then goes through and uses a rather odd conditional statement.
+	   * The first half of the if statements increments all the months by one and checks if they are even.
+	   * This would turn January into 2 which does have 31 days and trun April into 5 which has 30 days.
+	   * The second half just checks the even months beyond 7.
+	   * Lastly it will just return 30 otherwise.
+	   * @return The numbers of days within the month.
+	   */
+	  public int getDays(){
+	    if(month == 2)return 28;
+	    if( ((month + 1) % 2 == 0 && month < 9) || ((month % 2 == 0) && month >= 8))   return 31;
+	    return 30;
+
+	  }
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

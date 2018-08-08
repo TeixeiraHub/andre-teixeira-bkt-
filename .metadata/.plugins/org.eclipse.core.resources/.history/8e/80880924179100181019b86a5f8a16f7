@@ -1,0 +1,10 @@
+package candidatura.questao8;
+
+public class NaoChecadaException extends Exception {
+
+	@Override
+	public String toString() {
+		return "Essa exceção não será checada";
+	}
+	
+}

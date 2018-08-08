@@ -1,0 +1,28 @@
+package candidatura.questao2;
+
+import java.util.Random;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		Random gerador = new Random();
+
+		int S = gerador.nextInt(100);
+		
+		int R = gerador.nextInt(10);
+
+		System.out.println(S);
+		System.out.println();
+		System.out.println(R);
+		System.out.println();
+		for (int i = 1; i <= S; i++) {
+			if (i%2==0) {
+				System.out.println(i);		
+			}
+			if (i%(R*2)==0) {
+				System.out.println();
+				System.out.println("Múltiplo do dobro de R encontrado "+i);
+			}
+		}
+	}
+}

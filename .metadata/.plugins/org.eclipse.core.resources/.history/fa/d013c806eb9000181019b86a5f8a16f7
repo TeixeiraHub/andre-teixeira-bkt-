@@ -1,0 +1,14 @@
+package candidatura.questao7;
+//7.3
+public class classeC extends classeB implements Contrato{
+	
+	public void implementeMe() {
+		implementeMe();
+	}
+	
+	public static void main(String[] args) {
+		classeC c = new classeC();
+		
+		c.implementeMe();
+	}
+}

@@ -1,0 +1,5 @@
+package candidatura.questao7;
+//7.1
+public interface Contrato {
+	public static void implementeMe() {}
+}

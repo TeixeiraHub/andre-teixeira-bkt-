@@ -1,0 +1,30 @@
+package candidatura.questao1;
+
+import java.util.Random;
+
+public class Questao1 {
+
+	public static void main(String[] args) {
+		System.out.println(gerarPar());
+	}
+	
+		
+		static int gerarPar(int valores){
+			
+			int numeroPar = 0;
+			Random gerador = new Random();
+			
+			int numGerado = gerador.nextInt();
+			for (int i = 1; i < numGerado; i++) {
+				if (gerador.nextInt()%2==0 && gerador.nextInt()%5<>0);
+				numeroPar = (gerador.nextInt());
+				
+				System.out.println(numeroPar);
+							
+			}
+			return numeroPar; 
+		};
+
+	}
+
+

@@ -1,0 +1,28 @@
+package candidatura.questao7;
+import java.util.Scanner;
+//7.4
+public class Main { 
+	public static void executar (String a) {
+		if(a == "a" || a == "A") {
+			
+			classeA.implementeMe();
+		}
+		else if (a == "b" || a == "B") {
+			classeB.implementeMe();
+		}
+		else if (a == "c" || a == "C") {
+			classeC.implementeMe();
+		}
+		else
+			System.out.println("Caracter inválido");
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Digite uma letra do alfabeto.");
+		String letra = input.next();
+		executar(letra);
+		input.close();
+	}
+}

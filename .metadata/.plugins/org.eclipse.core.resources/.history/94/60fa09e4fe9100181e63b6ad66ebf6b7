@@ -1,0 +1,11 @@
+package wflowCtrl;
+
+public class atuador {
+	
+	public Socket actuatorSocket = null;
+    BufferedReader in = null;
+    int num = 1;
+
+    int data = 0;
+
+}

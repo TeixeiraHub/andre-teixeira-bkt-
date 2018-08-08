@@ -1,0 +1,33 @@
+package candidatura.questao5;
+
+public class Questao5 {
+	
+	abstract class Animal{
+		protected abstract void comer();
+		protected abstract void dormir();
+	}
+	
+	class Mamifero extends Animal{
+
+		@Override
+		protected void comer() {
+			System.out.println("Comer");
+			
+		}
+
+		@Override
+		protected void dormir() {
+			System.out.println("Dormir");
+		}
+		
+		
+		
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package candidatura.questao7;
+
+public class classeB {
+
+	public double implemeteMe()
+	{
+		double c = 140.12;
+		double b = 0.075;
+		return (a*b)-c;
+	}
+	
+	public static void main (String[]args)
+	{
+		classeA s=new classeA();
+	}
+
+}

@@ -1,0 +1,10 @@
+package candidatura.questao7;
+
+public class Main implements Contrato{
+
+	public static void main(String[] args) {
+		
+		implementeMe();
+	}
+
+}

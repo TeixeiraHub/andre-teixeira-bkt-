@@ -1,0 +1,46 @@
+package candidatura.questao9;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main extends Pessoa {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int idade = 0;
+		int id = 0;
+		String nome = null;
+		
+		int aux = 1;
+		
+		Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Joao");
+		pessoa.setId(1);
+		pessoa.setIdade(19);
+		
+		pessoa.setNome("Alice");
+		pessoa.setId(2);
+		pessoa.setIdade(5);
+		
+		pessoa.setNome("Fernando");
+		pessoa.setId(3);
+		pessoa.setIdade(27);
+		
+		pessoa.setNome("Carlos");
+		pessoa.setId(4);
+		pessoa.setIdade(12);
+		
+		pessoa.setNome("Priscila");
+		pessoa.setId(5);
+		pessoa.setIdade(31);
+		
+        ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+        
+        	pessoas.add(pessoa);
+        	       
+        System.out.println(pessoa.getNome()+"\n"+pessoa.getId()+"\n"+pessoa.getIdade());
+
+	}
+
+}

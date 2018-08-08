@@ -1,0 +1,12 @@
+package candidatura.questao5;
+
+public class Questao5{
+
+	public static void main(String[] args) {
+		
+		System.out.println(mamifero);
+		
+		System.out.println(ave);
+	}
+
+}

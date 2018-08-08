@@ -1,0 +1,28 @@
+package com.bilhete.imprimir.ticket;
+
+import java.util.Date;
+import com.bilhetetrem.info.DadosBilhetes;
+import com.bilhete.imprimir.viajante.Viajante;
+import com.bilhete.tipo.assento.*;
+
+public class ImprimirBilhete {
+
+	public static void main(String[] args) {
+
+		Viajante viajante01 = new Viajante();
+		viajante01.setnomeCompleto("Luiz Siqueira");
+		viajante01.setregistroBilhete("001234");
+		viajante01.settempoViagem("7 horas");
+		viajante01.setdestino("Rio de Janeiro");
+		viajante01.setorigem("Minas Geras");
+		viajante01.setdata("23/06/2015");
+		viajante01.sethora("23:35");
+		viajante01.setnumeroVagao("02");
+		viajante01.setnumeroVagao("122");
+		viajante01.settipoAssento("1");
+		viajante01.imprimir();
+		System.out.printf("\n");
+
+	}
+
+}

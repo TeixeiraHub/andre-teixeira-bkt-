@@ -1,0 +1,28 @@
+package candidatura.questao9;
+
+public class Pessoa {
+	
+	int id;
+	String nome;
+	int idade;
+	
+	private int getId() {
+		return id;
+	}
+	protected void setId(int id) {
+		this.id = id;
+	}
+	protected String getNome() {
+		return nome;
+	}
+	protected void setNome(String nome) {
+		this.nome = nome;
+	}
+	private int getIdade() {
+		return idade;
+	}
+	protected void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+}

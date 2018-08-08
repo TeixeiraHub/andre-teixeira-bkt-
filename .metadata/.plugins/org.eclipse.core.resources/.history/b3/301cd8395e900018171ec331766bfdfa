@@ -1,0 +1,24 @@
+package candidatura.questao7;
+
+public class Main { 
+	
+	public void executar (String a) {
+		if(a == "a" || a == "A") {
+			
+			classeA.implementeMe();
+		}
+		else if (a == "b" || a == "B") {
+			classeB.implementeMe();
+		}
+		else if (a == "c" || a == "C") {
+			classeC.implementeMe();
+		}
+		else
+			System.out.println("Letra inválida");
+	}
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

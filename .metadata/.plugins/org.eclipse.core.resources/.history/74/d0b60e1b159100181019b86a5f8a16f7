@@ -1,0 +1,5 @@
+package candidatura.questao8;
+
+public class minhasExceptions extends Exception {
+
+}

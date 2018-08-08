@@ -1,0 +1,36 @@
+package wflowCtrl;
+
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
+
+//Arduino ou Raspberry
+
+public class controlador extends Thread {
+
+	public static void main(String[] args) throws IOException {
+	        controleSocket ctrl = new controleSocket(1, 4440, 4450); //porta de espera pelo sensor e porta de conexao ao atuador
+
+	        atuador atua = new atuador(1, 4450);
+
+	        TimerTask task = new TimerTask() {
+	            sensor SEN = new sensor(1, 4440);
+	            
+	            @Override
+	            public void run(){
+	                SEN.sendMsg();
+	            }
+	        };
+	        
+	        Scanner sr=new Scanner(System.in);
+			System.out.println("Digite o período que deseja monitorar:");
+			int a=sr.nextInt();
+	        ctrl.start();
+	        atua.start();
+	        Timer timer = new Timer();
+	        timer.schedule(task, 0, a*1000);
+
+	     }
+	}
+

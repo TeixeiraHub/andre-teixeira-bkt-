@@ -1,0 +1,111 @@
+package com.bilhetetrem.info;
+import java.util.Date;
+
+public class DadosBilhetes {
+	
+	private String nomeCompleto;
+	private int registroBilhete;
+	private String tempoViagem;
+	private String destino;
+	private String origem;
+	private Date data;
+	private Date hora;
+	private int numeroVagao;
+	private int numeroAssento;
+	private String tipoAssento;
+	
+	public void imprimir() {
+		System.out.println("Nome Completo: " + nomeCompleto);
+		System.out.println("Registro do Bilhete :" + registroBilhete);
+		System.out.println("Duração da Viajem: " + tempoViagem);
+		System.out.println("Destino: " + destino);
+		System.out.println("Origem: " + origem);
+		System.out.println("Data da viagem: " + data);
+		System.out.println("Hora da viagem: " + hora);
+		System.out.println("Numero do Vagão: " + numeroVagao);
+		System.out.println("Numero do Assento: " + numeroAssento);
+		System.out.println("Tipo do Assento: " + tipoAssento);
+		
+	}
+		
+	public String getNomeCompleto() {
+		return nomeCompleto;
+	}
+	
+	public void setNomeCompleto(String nomeCompleto) {
+		this.nomeCompleto = nomeCompleto;
+	}
+	
+	public int getRegistroBilhete() {
+		return registroBilhete;
+	}
+	
+	public void setRegistroBilhete(int registroBilhete) {
+		this.registroBilhete = registroBilhete;
+	}
+	
+	public String getTempoViagem() {
+		return tempoViagem;
+	}
+	
+	public void setTempoViagem(String tempoViagem) {
+		this.tempoViagem = tempoViagem;
+	}
+	
+	public String getDestino() {
+		return destino;
+	}
+	
+	public void  setDestino(String destino) {
+		this.destino = destino;
+	}
+	
+	public String getOrigem() {
+		return origem;
+	}
+	
+	public void setOrigem(String origem) {
+		this.origem = origem;
+	}
+	
+	public Date getData() {
+		return data;
+	}
+	
+	public void setData(Date data) {
+		this.data = data;
+	}
+	
+	public Date getHora() {
+		return hora;
+	}
+	
+	public void setHora(Date hora) {
+		this.hora = hora;
+	}
+	
+	public int getNumeroVagao() {
+		return numeroVagao;
+	}
+	
+	public void setNumeroVagao(int numeroVagao) {
+		this.numeroVagao = numeroVagao;
+	}
+	
+	public int getNumeroAssento() {
+		return numeroAssento;
+	}
+	
+	public void setNumeroAssento(int numeroAssento) {
+		this.numeroAssento = numeroAssento;
+	}
+	
+	public String getTipoAssento() {
+		return tipoAssento;
+	}
+	
+	public void setTipoAssento(String tipoAssento) {
+		this.tipoAssento = tipoAssento;
+	}
+	
+}

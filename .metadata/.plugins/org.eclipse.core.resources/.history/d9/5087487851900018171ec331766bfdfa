@@ -1,0 +1,12 @@
+package candidatura.questao6;
+
+public abstract class Conta {
+		
+	public static void meEstenda() {
+		System.out.println("Fui eStendido.");
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,23 @@
+package candidatura.questao6;
+
+public class Questao6 extends Conta {
+	
+	final int valorParaTodos = 150;
+	final static int constante = 500;
+	
+
+	public static void main(String[] args) {
+		
+		Conta c = new Questao6();
+		
+		System.out.println(c);
+		System.out.println();
+	}
+
+	@Override
+	public void meExtenda() {
+		System.out.println("Fui extendido.");
+		
+	}
+
+}

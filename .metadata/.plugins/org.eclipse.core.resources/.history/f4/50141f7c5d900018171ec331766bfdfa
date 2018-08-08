@@ -1,0 +1,23 @@
+package candidatura.questao7;
+
+public class Main { 
+	
+	public char executa (char a) {
+		if(a == "a" || a == "A") {
+			return a;
+		}
+		else if (a == "b" || a == "B") {
+			return a;
+		}
+		else if (a == "c" || a == "C") {
+			return a;
+		}
+		else
+			System.out.println("Letra inválida");
+	}
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

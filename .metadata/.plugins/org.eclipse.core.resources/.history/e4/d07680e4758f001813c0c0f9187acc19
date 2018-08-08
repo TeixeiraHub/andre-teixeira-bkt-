@@ -1,0 +1,36 @@
+package candidatura.questao4;
+
+public class Questao4_1 {
+
+	
+	private static void diasMes(int mes) {
+	
+	int dias = 31;
+	
+	if(mes>12 || mes<1){
+		System.out.println("Mês inválido");
+	}else {
+		switch(mes)
+		{
+		// fevereiro: subtraímos 2 dias aqui e 1 dia no próximo case
+		case 2:
+			dias-=2;
+			System.out.println("Mês com menos de 30 dias");
+			break;
+			//meses que possuem 30 dias: só subtraímos 1 dia
+		case 4: case 6: case 9: case 11:
+			dias-=1;
+			System.out.println("Mês com 30 dias");
+			break;
+		default:
+			System.out.println("Mês com 31 dias");
+		}
+	}
+}
+
+	public static void main(String[] args) {
+		
+		diasMes(13);
+	}
+
+}

@@ -1,0 +1,9 @@
+package candidatura.questao7;
+
+public class classeA implements Contrato{
+
+	public static void main (String[]args){
+		
+		System.out.println(implementeMe());
+	}
+}

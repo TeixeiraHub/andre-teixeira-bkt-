@@ -1,0 +1,9 @@
+package candidatura.questao7;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface Interface {
+	public int implementeMe(int a);
+	
+}

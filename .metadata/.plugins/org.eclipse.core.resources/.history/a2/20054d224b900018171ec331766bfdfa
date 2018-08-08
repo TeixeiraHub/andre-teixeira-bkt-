@@ -1,0 +1,12 @@
+package candidatura.questao6;
+
+public class Questao6 extends Conta {
+
+	public static void main(String[] args) {
+		
+		Conta c = new Conta;
+		
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package candidatura.questao7;
+
+public interface Contrato {
+	public static void implementeMe() {
+			System.out.println("Classe A");
+	}
+	
+}

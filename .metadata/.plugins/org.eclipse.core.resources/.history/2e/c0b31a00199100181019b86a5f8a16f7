@@ -1,0 +1,11 @@
+package candidatura.questao8;
+
+@SuppressWarnings("serial")
+public class NaoChecadaException extends Exception {
+
+	@Override
+	public String toString() {
+		return "Essa exceção não será checada";
+	}
+	
+}

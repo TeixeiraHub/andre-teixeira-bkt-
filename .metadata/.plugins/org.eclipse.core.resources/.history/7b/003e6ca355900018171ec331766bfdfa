@@ -1,0 +1,15 @@
+package candidatura.questao7;
+
+public class classeB implements Contrato {
+
+	public double implemeteMe()
+	{
+		System.out.println("Classe B");
+	}
+	
+	public static void main (String[]args)
+	{
+		classeB s=new classeB();
+	}
+
+}

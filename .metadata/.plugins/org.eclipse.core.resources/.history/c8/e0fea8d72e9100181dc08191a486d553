@@ -1,0 +1,24 @@
+package candidatura.questao1;
+
+import java.util.Random;
+
+public class Questao1 {
+
+	public static void main(String[] args) {
+
+
+		Random gerador = new Random();
+
+		int R = gerador.nextInt(100);
+
+		System.out.println(R);
+		System.out.println();
+		for (int i = 1; i <= R; i++) {
+			if (i%2==0 && i%5!=0) {
+				System.out.println(i);		
+			}			
+		}
+	}
+}
+
+

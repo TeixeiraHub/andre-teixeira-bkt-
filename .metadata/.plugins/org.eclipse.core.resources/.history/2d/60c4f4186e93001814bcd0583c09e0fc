@@ -1,0 +1,38 @@
+package candidatura.questao8;
+//8.1 e 8.2
+public class Questao8 {
+
+	public static void main(String[] args) throws ChecadaException, NaoChecadaException {
+
+		int[] numeros = {4, 8, 16, 32, 64, 128};
+		int[] denom = {2, 0, 4, 8, 0};
+
+		for (int i=0; i<numeros.length; i++){
+			try{
+				System.out.println(numeros[i] + "/" + denom[i] + " = " + (numeros[i]/denom[i]));
+			}
+			catch(ArithmeticException e){
+				System.out.println("Erro ao dividir por zero");
+
+				public int propagaChecada(int dia) throws ChecadaException {
+					if (dia%2!=0) {
+						throw new ChecadaException();
+					}
+				}
+				
+			}
+			catch(ArrayIndexOutOfBoundsException e){
+				System.out.println("Posição do array inválida");
+				throw new NaoChecadaException();
+				
+				
+			}
+			finally {
+				System.out.println("Tratamento de exceção.");
+				System.out.println();
+			}
+
+		}
+
+	}
+}

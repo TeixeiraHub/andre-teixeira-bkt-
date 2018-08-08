@@ -1,0 +1,8 @@
+package candidatura.questao6;
+
+public class Conta {
+	
+	final int valorParaTodos = 150;
+
+
+}

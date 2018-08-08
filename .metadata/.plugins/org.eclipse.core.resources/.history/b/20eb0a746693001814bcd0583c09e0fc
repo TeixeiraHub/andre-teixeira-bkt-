@@ -1,0 +1,32 @@
+package candidatura.questao9;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int idade = 0;
+		int id = 0;
+		String nome = null;
+
+		List<Pessoa> pessoas = new ArrayList<Pessoa>();
+
+		Pessoa p1 = new Pessoa(1,"João",19);
+		Pessoa p2 = new Pessoa(2,"João",19);
+		Pessoa p3 = new Pessoa(3,"João",19);
+		Pessoa p4 = new Pessoa(4,"João",19);
+		Pessoa p5 = new Pessoa(5,"João",19);
+		
+		for (Pessoa pessoa : pessoas) {
+			pessoas.add(pessoa);
+		}
+		
+		for (Pessoa pessoa2 : pessoas) {
+			System.out.println(pessoa.getNome()+"\n"+pessoa.getId()+"\n"+pessoa.getIdade());
+		}	       
+	}
+}
